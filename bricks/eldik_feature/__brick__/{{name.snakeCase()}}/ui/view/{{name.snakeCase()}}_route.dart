@@ -23,7 +23,7 @@ class {{name.pascalCase()}}Route extends AppRouteData with AppRouteActions {
 
   static {{name.pascalCase()}}Route _fromState(GoRouterState state) => const {{name.pascalCase()}}Route();
 
-  static final route = AppRout eData.route<{{name.pascalCase()}}Route>(
+  static final route = AppRouteData.route<{{name.pascalCase()}}Route>(
     path: _path,
     factory: _fromState,
     parentNavigatorKey: rootNavigatorKey,
