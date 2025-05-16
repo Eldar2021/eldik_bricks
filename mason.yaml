@@ -5,3 +5,5 @@ bricks:
     path: bricks/bloc
   cubit:
     path: bricks/cubit
+  state_management:
+    path: bricks/state_management

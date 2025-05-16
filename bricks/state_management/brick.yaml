@@ -1,0 +1,39 @@
+name: state_management
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.1
+
+# Each variable has:
+#  * a type (string, number, boolean, enum, array, or list)
+#  * an optional short description
+#  * an optional default value
+#  * an optional list of default values (array only)
+#  * an optional prompt phrase used when asking for the variable
+#  * a list of values (enums only)
+#  * an optional separator (list only)
+vars:
+  name:
+    type: string
+    description: The name of the state management
+    default: counter
+    prompt: What is your state management called?
+  type:
+    type: enum
+    description: The type of bloc used.
+    default: bloc
+    prompt: What type of bloc do you want to use?
+    values:
+      - bloc
+      - cubit
+  style:
+    type: enum
+    description: The style of bloc generated.
+    default: basic
+    prompt: What is the bloc style?
+    values:
+      - basic
+      - equatable
+      - freezed
