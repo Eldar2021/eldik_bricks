@@ -1,3 +1,7 @@
 bricks:
   eldik_feature:
     path: bricks/eldik_feature
+  bloc:
+    path: bricks/bloc
+  cubit:
+    path: bricks/cubit
